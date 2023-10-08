@@ -36,9 +36,8 @@ The Personal Portfolio Website is a web-based platform designed to showcase my s
 ## Screenshots or Demo:
 - [Link to Live Demo (if available)](https://your-demo-link.com)
 - Screenshots:
-  - ![Screenshot 1](screenshots/![screenshot1.png](images/istockphoto-837254718-2048x2048.jpg))
-  - ![Screenshot 2](screenshots/screenshot2.png)
-  - [Add more screenshots as needed]
+  - ![Screenshot 1](screenshots/![Alt text](image.png)
+   - [Add more screenshots as needed]
 
 ## Roadmap and Future Enhancements:
 In the future, I plan to enhance my personal portfolio website with the following improvements:
