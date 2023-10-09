@@ -31,12 +31,12 @@ The Personal Portfolio Website is a web-based platform designed to showcase my s
 ## Technologies Used:
 - **Frontend:** HTML5, CSS, JavaScript (Vanilla JS)
 - **Responsive Design:** Bootstrap CSS Framework
-- **Hosting:** GitHub Pages
+- **Hosting:** GitHub Page:(https://github.com/AnthoniaNdoni)
 
 ## Screenshots or Demo:
 - [Link to Live Demo (if available)](https://your-demo-link.com)
 - Screenshots:
-  - ![Screenshot 1](screenshots/![Alt text](image.png)
+  - ![Screenshot 1](screenshots/![Alt text](image.png))
    - [Add more screenshots as needed]
 
 ## Roadmap and Future Enhancements:
