@@ -3,6 +3,12 @@ from flask_mail import Mail, Message  # Import Flask-Mail
 from smtplib import SMTPException
 import smtplib
 import re  # Import the 're' module
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 
 # Create a Flask application
 app = Flask('Test app', template_folder='app/templates', static_folder='app/static')
@@ -10,8 +16,8 @@ app = Flask('Test app', template_folder='app/templates', static_folder='app/stat
 # Configure Flask-Mail with your email server settings
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Replace with your SMTP server
 app.config['MAIL_PORT'] = 587  # or 465
-app.config['MAIL_USERNAME'] = 'tamarandoni@gmail.com'
-app.config['MAIL_PASSWORD'] = 'peter87@@'
+app.config['MAIL_USERNAME'] = os.getenv("MY_EMAIL")
+app.config['MAIL_PASSWORD'] = os.getenv("MY_PASSWORD")
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_DEBUG'] = True
 
@@ -57,11 +63,16 @@ def send_email():
 
     try:
         mail.send(message)
-        return "Email sent successfully."
+        print("Email sent successfully.")
     except SMTPException as e:
         print("An error occurred while sending the email:", e)
         # Log the error for debugging or provide a user-friendly message
         return "Failed to send the email. Please try again later"
+    except UnboundLocalError as e:
+        print("An error occurred while sending the email:", e)
+    except TypeError as e:
+        print("An error occurred while sending the email:", e)
+         
 
 # Run the Flask application
 if __name__ == '__main__':

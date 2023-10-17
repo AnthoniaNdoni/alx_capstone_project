@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                Anthonia Personal portfolio
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#intro" class="nav-link smoothScroll">About me </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link smoothScroll">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
+                    <a href="#" class="custom-btn btn" download>Download CV</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
+
+         <div class="container">
+            <div class="row">
+                  <div class="mx-auto col-lg-5 col-md-5 col-10">
+                      <img src="{{ url_for('static', filename='/image/anthonia.jpg')}}" class="img-fluid tonia" alt="Ben Resume HTML Template">
+                  </div>
+
+                   <div class="d-flex flex-column justify-content-center align-items-center col-lg-7 col-md-7 col-12">
+                        <div class="hero-text">
+
+                            <h1 class="hero-title">👋 Anthonia, a Software Engineering student at alx</h1>
+
+                            <a href="#" class="email-link">
+                                tamarandoni@gmail.com
+                            </a>
+                          
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h3 class="mb-4">Hello, I'm Anthonia Ndoni</h3>
+
+                    <p>a passionate software engineering student at ALX. Technology has always been a part of my life, and I'm constantly exploring its vast and ever-evolving world.
+
+    I believe in the power of technology to shape the future, and I'm excited to be part of the next generation of problem solvers and innovators. My journey in software engineering has been an exhilarating learning experience, and I'm eager to continue honing my skills and expanding my knowledge.
+</p>
+
+                    <h1>Skills</h2>
+
+                    <ul class="mt-4 mb-5 mb-lg-0 profile-list list-unstyled">
+                        <li>Html and CSS </li>
+
+                        <li>Javascript</li>
+
+                        <li>React</li>
+
+                        <li>Git</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 mx-auto col-md-6 col-12">
+                    <img src="{{ url_for('static', filename='/image/true-agency.jpg')}}" class="about-image img-fluid" alt="Ben's Resume HTML Template">
+                </div>
+
+            </div>
+            <section class="about section-padding" id="about">
+  <div class="container">
+    <div class="row about-third">
+      <div class="col-lg-4 col-md-4 col-12">
+        <h3>JavaScript Proficiency</h3>
+        <p>With a solid foundation in JavaScript, I am adept at building dynamic and interactive web applications. I use JavaScript to enhance user experiences and bring web pages to life.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <h3>HTML Mastery</h3>
+        <p>HTML is the backbone of the web, and I have a deep understanding of creating well-structured and semantically meaningful web pages. I ensure content is accessible and SEO-friendly.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <h3>Git Version Control</h3>
+        <p>Version control is crucial in modern web development. I am proficient in using Git to manage project versions and collaborate with other developers efficiently.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- TESTIMONIAL -->
+     <section class="testimonials section-padding mb-5" id="testimonials">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-12">
+    <h3 class="mb-5 text-center">Projects</h3>
+
+    <div class="row">
+        <!-- Project 1 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='/image/design.jpg')}}" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">implement  a design from scratch</h5>
+                    <p class="card-text">In this project, you would start with a blank canvas and design and build a portfolio website entirely from the ground up. This topic can encompass various aspects of web development and design, including layout design, color schemes, typography, responsive design, and integration of interactive elements. It provides an excellent opportunity to showcase your design and development skills while crafting a personal portfolio website or any other web project you have in mind.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='/image/flex.jpg')}}" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Optimizing Flexbox Layouts for Cross-Platform Compatibility</h5>
+                    <p class="card-text">This project topic would involve exploring the use of Flexbox, a powerful layout tool in CSS, to create flexible and responsive layouts for web applications or websites. The main focus would be on ensuring that the layouts are compatible across various devices and screen sizes, making it an essential skill for web development in the modern, multi-device world. The project can include demonstrating how to design and code flexible and responsive user interfaces using Flexbox.Optimizing Flexbox Layouts for Cross-Platform<p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more project cards as needed -->
+    </div>
+</div>
+
+
+
+     <!-- FAQ -->
+    
+     <section class="contact section-padding pt-0" id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <form method="POST" action="/send-email" class="contact-form webform"  role="form">
+                
+                <div class="form-group d-flex flex-column-reverse">
+                    <input type="text" class="form-control" name="user-name" id="cf-name" placeholder="Your Name">
+
+                    <label for="cf-name" class="webform-label">Full Name</label>
+                </div>
+
+                <div class="form-group d-flex flex-column-reverse">
+                    <input type="email" class="form-control" name="user-email" id="cf-email" placeholder="Your Email">
+
+                    <label for="cf-email" class="webform-label">Your Email</label>
+                </div>
+
+                <div class="form-group d-flex flex-column-reverse">
+                    <textarea class="form-control" rows="5" name="user-message" id="cf-message" placeholder="Your Message"></textarea>
+
+                    <label for="cf-message" class="webform-label">Message</label>
+                </div>
+
+                <button type="submit" class="form-control" id="submit-button" name="submit">Send</button>
+            </form>
+          </div>
+
+            <div class="mx-auto col-lg-4 col-md-6 col-12">
+                <h3 class="my-4 pt-4 pt-lg-0">Say hello</h3>
+
+                <p class="mb-1">+2348034556073</p>
+
+                <p>
+                    <a href="#">
+                        tamarandoni@gmail.com
+                    <i class="fa fa-arrow-right custom-icon"></i>
+                    </a>
+                </p>
+
+                <ul class="social-links mt-2">
+                    <li><a href="https://fb.com/tooplate"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://twitter.com/softouch77"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/anthonia-ndoni-3674a5123/"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+                </ul>
+                
+              <p class="copyright-text mt-5 pt-3">Copyright &copy; Anthonia</p>
+                
+                
+            </div>
+
+        </div>
+      </div>
+    </section>
+     <!-- SCRIPTS -->
+     <script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+     <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+     <script src="{{ url_for('static', filename='js/smoothscroll.js')}}"></script>
+     <script src="{{ url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+     <script src="{{ url_for('static', filename='js/custom.js')}}"></script>
+
+</body>
+</html>
+
+{% endblock %}
