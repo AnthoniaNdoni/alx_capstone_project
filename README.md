@@ -30,8 +30,9 @@ The Personal Portfolio Website is a web-based platform designed to showcase my s
 
 ## Technologies Used:
 - **Frontend:** HTML5, CSS, JavaScript (Vanilla JS)
-- **Responsive Design:** Bootstrap CSS Framework
+- **Responsive Design:** Bootstrap CSS Framework, Flask Python Framwork
 - **Hosting:** GitHub Page:(https://github.com/AnthoniaNdoni)
+- ** Flask Server:server-side 
 
 ## Screenshots or Demo:
 - [Link to Live Demo (if available)](https://your-demo-link.com)
@@ -48,8 +49,9 @@ In the future, I plan to enhance my personal portfolio website with the followin
 
 ## Contact Information:
 - **Developer:** [Anthonia Ndoni]
-- **GitHub:** [Your GitHub Profile](https://github.com/AnthoniaNdoni)
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/Anthonia Ndoni)
+- **GitHub Repo:** [GitHub Profile](https://github.com/AnthoniaNdoni)
+- **GitHub Repo:** https://github.com/AnthoniaNdoni/alx_capstone_project
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/Anthonia Ndoni)
 - **Email:** [tamarandoni@gmail.com]
 
 Feel free to reach out to me via email or connect on LinkedIn for further inquiries or collaborations!
